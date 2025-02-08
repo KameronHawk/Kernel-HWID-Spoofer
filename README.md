@@ -55,7 +55,7 @@ A hardware ID (HWID) spoofer for Call of Duty Warzone, created to bypass the ant
 
 
 ## What Does This Bypass?
-![alt text](https://imgur.com/2LxkItS)
+![alt text](image.png)
 
 Randgrid.sys verifies IOCTL dispatch routines and checks whether the routine executes within the expected module. This is bypassed by:
 
