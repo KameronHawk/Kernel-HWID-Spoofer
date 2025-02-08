@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Spoof">
+      <UniqueIdentifier>{b3667f36-3da0-4e79-93c9-7e98f3a2908c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Spoof">
+      <UniqueIdentifier>{7ce51585-43d1-4ccc-8e43-ebf818b67de6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\StringEncrypt">
+      <UniqueIdentifier>{c4fffbdb-b4b8-41c5-b5a1-fa0d898e5b95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server">
+      <UniqueIdentifier>{964670ce-d534-4850-be27-74cec5eaa697}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="Mapper.inf">
+      <Filter>Driver Files</Filter>
+    </Inf>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Spoof.cpp">
+      <Filter>Source Files\Spoof</Filter>
+    </ClCompile>
+    <ClCompile Include="volumes.cpp">
+      <Filter>Source Files\Spoof</Filter>
+    </ClCompile>
+    <ClCompile Include="disk.cpp">
+      <Filter>Source Files\Spoof</Filter>
+    </ClCompile>
+    <ClCompile Include="usbserials.cpp">
+      <Filter>Source Files\Spoof</Filter>
+    </ClCompile>
+    <ClCompile Include="nic.cpp">
+      <Filter>Source Files\Spoof</Filter>
+    </ClCompile>
+    <ClCompile Include="smbios.cpp">
+      <Filter>Source Files\Spoof</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ntapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCTLHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Spoof.h">
+      <Filter>Header Files\Spoof</Filter>
+    </ClInclude>
+    <ClInclude Include="disk.h">
+      <Filter>Header Files\Spoof</Filter>
+    </ClInclude>
+    <ClInclude Include="nic.h">
+      <Filter>Header Files\Spoof</Filter>
+    </ClInclude>
+    <ClInclude Include="smbios.h">
+      <Filter>Header Files\Spoof</Filter>
+    </ClInclude>
+    <ClInclude Include="volumes.h">
+      <Filter>Header Files\Spoof</Filter>
+    </ClInclude>
+    <ClInclude Include="usbserials.h">
+      <Filter>Header Files\Spoof</Filter>
+    </ClInclude>
+    <ClInclude Include="SkCrypt.h">
+      <Filter>Header Files\StringEncrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="ia32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Mapper.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
