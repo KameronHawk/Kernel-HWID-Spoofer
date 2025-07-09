@@ -1,6 +1,6 @@
-# Warzone-HWID-Spoofer
+# HWID-Spoofer
 
-A hardware ID (HWID) spoofer for Call of Duty Warzone, created to bypass the anti-cheat checks. After reversing Randgrid.sys, I found that the driver and user-mode components query multiple hardware identifiers, including:
+A hardware ID (HWID) spoofer for an FPS game thats a battle royale, created to bypass the anti-cheat checks. After reversing ****.sys, I found that the driver and user-mode components query multiple hardware identifiers, including:
 
 - NIC MAC Addresses
 
@@ -42,7 +42,7 @@ A hardware ID (HWID) spoofer for Call of Duty Warzone, created to bypass the ant
   
 - **Volume GUID:** Ensures all volume GUIDs are randomized across disk volumes.
   
-- **Volume Serial:** Randgrid.sys logs volume serials via ```GetVolumeInformationA```, which is unreliable as Windows generates a six-digit number per volume. This spoofer replaces these serials with randomized values.
+- **Volume Serial:** *****.sys logs volume serials via ```GetVolumeInformationA```, which is unreliable as Windows generates a six-digit number per volume. This spoofer replaces these serials with randomized values.
   
 - **USB Serial:** The anti-cheat retrieves USB serial numbers through HIDUSB.sys. Since not all USB devices have serials, nulling this information is fine and shouldn't raise any flags.
 
@@ -57,7 +57,7 @@ A hardware ID (HWID) spoofer for Call of Duty Warzone, created to bypass the ant
 ## What Does This Bypass?
 ![alt text](image.png)
 
-Randgrid.sys verifies IOCTL dispatch routines and checks whether the routine executes within the expected module. This is bypassed by:
+*****.sys verifies IOCTL dispatch routines and checks whether the routine executes within the expected module. This is bypassed by:
 
 1. Scanning for the discardable section in a driver.
 
@@ -69,7 +69,7 @@ ReferenceObjByName-> \Driver\disk
 ReferenceObjByName-> \Driver\mountmgr
 ```
 
-This spoofer is not like most P2Cs in the cheating scene, the spoofer mixes your current serial number and shuffles it based on the drivers start time (seed). Most of the spoofers in the cheat scene for Call of Duty will only change the last 4 letters/numbers on the HWID or completly nulling each serial which is a huge red flag.
+This spoofer is not like most P2Cs in the cheating scene, the spoofer mixes your current serial number and shuffles it based on the drivers start time (seed). Most of the spoofers in the cheat scene for FPS game only change the last 4 letters/numbers on the HWID or completly nulling each serial which is a huge red flag.
 
 
 ## Credits
